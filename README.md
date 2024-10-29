@@ -59,17 +59,12 @@ PRIVATE_KEY=your_deployment_private_key
 npx hardhat run scripts/deploy.js --network sepolia
 ```
 
-6. Run the backend
+6. Run the frontend
 ``` bash
 python frontend/app.py
 ```
 
-7. Run the frontend
-``` bash
-npm run dev
-```
-
 8. Test the contract
 ``` bash
-npx hardhat test
+npx hardhat test --show-stack-traces
 ```
